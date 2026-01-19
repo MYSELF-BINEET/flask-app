@@ -1,4 +1,4 @@
-# app.py
+# app.py  main file for application file
 
 from flask import Flask 
 from urllib.parse import quote 
@@ -14,4 +14,5 @@ def create_app():
 if __name__ == '__main__':
     app = create_app()
     app.run(host='0.0.0.0', port=80, debug=True)
+
 
