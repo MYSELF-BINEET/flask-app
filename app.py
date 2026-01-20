@@ -1,4 +1,4 @@
-# app.py
+# app.py  main file for application file
 
 from flask import Flask 
 from urllib.parse import quote 
@@ -8,9 +8,11 @@ def create_app():
 
     @app.route('/')
     def home():
-        return 'Wow CI-CD Pipeline is been developed updated Hurrayyyyy..'
+        return 'Wow CI-CD Pipeline is been developed updated Hurrayyyyy.. what is it'
 
     return app
 if __name__ == '__main__':
     app = create_app()
     app.run(host='0.0.0.0', port=80, debug=True)
+
+
