@@ -16,7 +16,6 @@ jobs:
   build-test-python-app:
 
     runs-on: ubuntu-latest
-    needs: [build-test-python-app]
 
     steps:
     - uses: actions/checkout@v4
@@ -42,6 +41,7 @@ jobs:
   sonar-qube-scanner:
     name: sonar-qube-scanner
     runs-on: ubuntu-latest
+    needs: [build-test-python-app]
     permissions: read-all
     steps:
       - uses: actions/checkout@v2
