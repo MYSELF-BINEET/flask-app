@@ -8,7 +8,7 @@ def create_app():
 
     @app.route('/')
     def home():
-        return 'Bineet Pradhan loves debalina jana'
+        return 'Bineet Pradhan hates debalina jana'
 
     return app
 if __name__ == '__main__':
